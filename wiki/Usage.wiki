@@ -1,0 +1,21 @@
+#summary Usage
+#labels Featured
+
+{{{
+feeds2fb2.py -t FILETYPE [options] FILE_TO_PARSE OUTPUT_NAME
+
+  -t FILETYPE           - here filetype is opml (OPML file) or text (simple text file with URLs to RSS feeds one at line)
+
+  Optional settings:
+         --title FB2BOOK_TITLE   - here you can specify the result fb2 book title.
+         --enable-pics           - enables images convertation into fb2-formated embedded images.
+         --book-per-feed         - enables fb2 book per feed mode. Every feed is created as a separate fb2 file.
+         --disable-zip           - disables zip packing of the result fb2 file/files (enabled by default).
+         --get-all-posts         - set this option if you want to get all RSS posts (not just the latest).
+
+  FILE_TO_PARSE         - the name of an input file (opml or simple text file).
+
+  OUTPUT_NAME           1. in "book-per-feed" mode books with feeds are placed into the directory with the name of OUTPUT_NAME.
+                           By default OUTPUT_NAME is a current directory.
+                        2. in default mode it is a name of the result fb2 book file without "fb2" extension
+}}}
